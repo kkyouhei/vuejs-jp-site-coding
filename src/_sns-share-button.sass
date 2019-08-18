@@ -1,0 +1,19 @@
+@import "variables"
+
+.sns-share-button
+  width: 160px
+  &__item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &--twitter
+      @extend %item-logo-style
+    &--note
+      @extend %item-logo-style
+    &--youtube
+      @extend %item-logo-style
+    &--github
+      @extend %item-logo-style
+
+%item-logo-style
+  fill: $main-color

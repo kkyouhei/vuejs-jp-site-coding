@@ -1,0 +1,35 @@
+@import "variables"
+
+.header
+  padding-top: 34px
+  padding-left: 20px
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 32px
+    max-width: $content-max-width
+    margin-left: auto
+    margin-right: auto
+  &__item
+    display: flex
+    align-items: center
+    &--logo
+      margin-right: 10px
+    &--menu
+      display: flex
+      align-items: center
+      justify-content: start
+      width: 370px
+      font-size: 0.9em
+    &--menu-about
+      @extend %header__item--menu-margin
+    &--menu-contact
+      @extend %header__item--menu-margin
+    &--separator
+      @extend %header__item--menu-margin
+      height: 32px
+      border-right: 2px solid #F2F2F2
+
+%header__item--menu-margin
+  margin-right: 28px
